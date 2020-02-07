@@ -8,6 +8,7 @@ export class WiredProgress extends WiredBase {
   @property({ type: Number }) min = 0;
   @property({ type: Number }) max = 100;
   @property({ type: Boolean }) percentage = false;
+  @property({ type: String }) label = "";
 
   private progBox?: SVGElement;
 
@@ -71,6 +72,8 @@ export class WiredProgress extends WiredBase {
         const pct = Math.floor(((this.value - this.min) / (this.max - this.min)) * 100);
         return (pct + '%');
       }
+    } else if (this.label !== '') {
+      return this.label;
     } else {
       return ('' + this.value);
     }
