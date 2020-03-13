@@ -22,7 +22,7 @@ import { WiredImage } from "wired-image"
 Use it in your web page:
 ```html
 <wired-image src="https://www.gstatic.com/webp/gallery/1.sm.jpg"></wired-image>
-<wired-image elevation="4" src="https://www.gstatic.com/webp/gallery/1.sm.jpg" alt="Gallery Picture 1"></wired-image>
+<wired-image elevation="4" src="https://www.gstatic.com/webp/gallery/1.sm.jpg"></wired-image>
 ```
 
 ## Properties
@@ -30,8 +30,6 @@ Use it in your web page:
 **src** - URL of the image.
 
 **elevation** - Numerical number between 1-5 (inclusive) - sets the elevation of the card. Default is 1.
-
-**alt** - An alternate text for the image
 
 ## License
 [MIT License](https://github.com/wiredjs/wired-elements/blob/master/LICENSE) (c) [Preet Shihn](https://twitter.com/preetster)
