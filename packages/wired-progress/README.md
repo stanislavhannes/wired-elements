@@ -34,9 +34,7 @@ Use it in your web page:
 
 **max** - Maximum value. Default is 100.
 
-**percentage** - Boolean indicating if the label should show a % symbol. Default is false.
-
-**label** - Displays text as label, instead of the value. Only works if percentage is false. 
+**percentage** - Boolean indicating if the label should show a % symbol.
 
 ## Custom CSS Variables
 
