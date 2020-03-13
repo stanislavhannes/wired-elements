@@ -8,6 +8,7 @@ const EMPTY_IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAA
 export class WiredImage extends WiredBase {
   @property({ type: Number }) elevation = 1;
   @property({ type: String }) src: string = EMPTY_IMAGE;
+  @property({ type: String }) alt: string = '';
   private resizeObserver?: ResizeObserver;
   private windowResizeHandler?: EventListenerOrEventListenerObject;
 
@@ -47,8 +48,8 @@ export class WiredImage extends WiredBase {
 
   render(): TemplateResult {
     return html`
-    <img src="${this.src}">
-    <div id="overlay"><svg></svg></div>
+      <img src="${this.src}" alt="${this.alt}">
+      <div id="overlay"><svg></svg></div>
     `;
   }
 
